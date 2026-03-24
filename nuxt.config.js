@@ -67,12 +67,13 @@ export default {
     script: [
       {
         async: true,
-        defer: true,
-        'data-domain': 'blog.system76.com',
-        src: 'https://plausible.io/js/plausible.outbound-links.js'
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-H37KSF3165'
       },
       {
-        innerHTML: 'window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }'
+        innerHTML: `window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-H37KSF3165');`
       }
     ],
 
