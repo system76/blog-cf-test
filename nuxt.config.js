@@ -11,10 +11,6 @@ const HOST = process.env.NODE_ENV === 'development'
 export default {
   target: 'static',
 
-  router: {
-    base: '/blog/'
-  },
-
   components: [
     '~/components',
     { path: '~/slices', extensions: ['vue'] }
